@@ -1,12 +1,47 @@
-/node_modules
+## default ##
 /public/hot
 /public/storage
 /storage/*.key
-/vendor
 /.idea
 /.vagrant
-Homestead.json
-Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+### Composer ###
+composer.phar
+/vendor
+
+### PHP Coding Standards Fixer ###
+.php_cs.cache
+
+### Node ###
+/node_modules
+
+## Laravel ##
 .env
+
+## Laravel Homestead ##
+/.vagrant
+Homestead.yaml
+Homestead.json
+
+## gitattributes ##
+* text=auto
+*.min.js binary
+*.min.css binary
+*.css linguist-vendored
+*.scss linguist-vendored
+/public/js/**/* binary
+/public/css/**/* binary
+/public/build/**/* binary
+/public/vendor/**/* binary
+
+## build,css,js,vendor ##
+public/build/*
+!public/build/.gitignore
+public/css/*
+!public/css/.gitignore
+public/js/*
+!public/js/.gitignore
+public/vendor/*
+!public/vendor/.gitignore
